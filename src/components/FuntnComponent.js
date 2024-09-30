@@ -4,7 +4,7 @@ import React from 'react'
 function FuntnComponent() {
   return (
     <div>
-        <h3> This is Function Based Component </h3>
+        <h4 style={{color: "green"}}> This is Function Based Component </h4>
     </div>
   )
 }

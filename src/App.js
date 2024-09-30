@@ -1,17 +1,46 @@
 import './App.css';
-import logo from './logo.svg';
-import ClassComp1 from './components/ClassComponent';
-import FunComponent from './components/FuntnComponent';
+import React from 'react';
+// import logo from './logo.svg';
+// import ClassComp1 from './components/ClassComponent';
+// import FunComponent from './components/FuntnComponent';
+import Header from './components/Header';
+import Sidenav from './components/Sidenav';
+import MainBody from './components/MainBody';
+import Footer from './components/Footer';
 
 
 function App() {
+
+  // let name = 'Smith';
+  // let a = 20;
+  // let b = 40;
+
+  // const Message = () => {
+  //   return "Good Morning";
+  // }
+
   return (
-    <div className="App">
+    <React.Fragment>
+      <div className='App'>
+        
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <h2> Hello Prosevo </h2>
-        <ClassComp1/>
-        <FunComponent/>
-    </div>
+        {/* <h1 style={{color: "red"}}> Hello Prosevo </h1>
+        <h2 style={{color:"blue"}}>My name is {name} </h2>
+        <h4>{a + b}</h4>
+        <h3> {Message()} </h3>
+        <h3>JSX - JavaScript Syntax Extention / JavaScript XML</h3>
+        <p>It is a React extention to the JavaScript language. Used in React easily write HTML & JavaScript together.</p> */}
+        {/* <ClassComp1/>
+        <FunComponent/> */}
+
+        <Header/>
+        <div className='body-style'>  
+          <Sidenav/>
+          <MainBody/>
+        </div>
+        <Footer/>
+      </div>  
+    </React.Fragment>
   );
 }
 
