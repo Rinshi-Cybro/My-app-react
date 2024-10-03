@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import './MainBody.css';
-import {Button, Accordion, Card, Container} from 'react-bootstrap';
-import States from './States';
-import ConditionRend from './ConditionRend';
-import Keys from './Keys/Keys';
+import { Container } from 'react-bootstrap';
 import Counter from './Counter/Counter';
+import './MainBody.css';
 
 
 
@@ -27,56 +24,14 @@ function MainBody() {
   }
   console.log('rendering')
 
-  const State = [
-    {name: "Kerala", language: "Malayalam", population: "3500000"},
-    {name: "Tamilnad", language: "Tamil", population: "8500000"},
-    {name: "Karnataka", language: "Telugu", population: "9500000"},
-  ]
 
 
-  // const clickEvent = () => {
-  //   alert('Button clicked');
-  // };
-
-  // const dbclickEvent = (name) => {
-  //   alert('Hello, I am ' + name);
-  // };
-
-  // const onChangeEvent = () => {
-  //   alert('On change event');
-  // };
-
-  // const MouseOverEvent = () => {
-  //   alert("You mouse over the element");
-  // };
 
   return (
     <div className='main-body'>
 
-      {/* <h2> Welcome to my App </h2>
-      <p>This is a simple layout example using React functional components.</p><br/><br/>
-      <h3 className='bg-success text-white w-50'>useState Hook in React</h3>
-      <p>State:- State is an object that stores the values of properties of a component that could change.<br/>
-        A State can be modified based on user action. And Every time state changes React re-render the component to the browser.</p>
-      <p>Hook:- A Hook is a special function that lets you "hook into" React features.<br/>
-        For example:- useState is a Hook that lets you add React state to function component.<br/>
-        Hook allows function component to have access to state and other react features</p> */}
-
-      <h3>My favourite colour is {colour}</h3>  
-      <Button onClick={changeColour}  variant="primary">Change colour</Button><br/><br/>
-
-      <h2> Counter is {count}</h2>
-      <Button onClick={IncrementCount} className='m-2 bg-success'> + </Button>
-      <Button onClick={decrementCount} className='m-2 bg-danger'> - </Button><br/><br/>
-      <hr/>
 
       <Container>
-        <States state = {State} />
-        <hr/>
-        <ConditionRend />
-        <hr/>
-        <Keys /> 
-        <hr/>
         <Counter />
       </Container>
 
