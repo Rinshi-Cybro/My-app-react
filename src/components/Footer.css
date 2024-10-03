@@ -4,7 +4,7 @@
     color: white;
     background-color: rgb(40, 44, 52);
     padding: 10px;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     width: 100%;
 }

@@ -1,12 +1,15 @@
 import './App.css';
 import React from 'react';
-// import logo from './logo.svg';
-// import ClassComp1 from './components/ClassComponent';
-// import FunComponent from './components/FuntnComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Sidenav from './components/Sidenav';
 import MainBody from './components/MainBody';
 import Footer from './components/Footer';
+
+// import logo from './logo.svg';
+// import ClassComp1 from './components/ClassComponent';
+// import FunComponent from './components/FuntnComponent';
+
 
 
 function App() {
@@ -38,6 +41,7 @@ function App() {
           <Sidenav/>
           <MainBody/>
         </div>
+        
         <Footer/>
       </div>  
     </React.Fragment>
